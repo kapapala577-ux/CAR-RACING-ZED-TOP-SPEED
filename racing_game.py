@@ -82,12 +82,12 @@ class RaceGame:
         opponent_progress = int((opponent_dist / self.race_length) * 20)
         
         print(f"\n📊 Race Progress:")
-        print(f"   You:      [{'█' * player_progress}{'░' * (20 - player_progress)}] {player_dist}m")
-        print(f"   Opponent: [{'█' * opponent_progress}{'░' * (20 - opponent_progress)}] {opponent_dist}m")
+        print(f"   You:      ['█' * player_progress}{'░' * (20 - player_progress)}] {player_dist}m")
+        print(f"   Opponent: ['█' * opponent_progress}{'░' * (20 - opponent_progress)}] {opponent_dist}m")
         
         if police_dist is not None:
             police_progress = int((police_dist / self.race_length) * 20)
-            print(f"   Police:   [{'🚔' * police_progress}{'░' * (20 - police_progress)}] {police_dist}m")
+            print(f"   Police:   ['🚔' * police_progress}{'░' * (20 - police_progress)}] {police_dist}m")
     
     def police_chase_phase(self, player_distance, opponent_distance):
         """Handle police chase after race ends."""
