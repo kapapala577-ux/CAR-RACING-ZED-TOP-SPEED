@@ -1,0 +1,6 @@
+# No external dependencies required for CLI version
+# GUI version uses tkinter (included with Python)
+
+# Optional: For enhanced features
+pygame>=2.0.0  # For future sound effects
+colorama>=0.4.4  # For better terminal colors
